@@ -26,12 +26,12 @@
             <p class="text-white/60 text-xs tracking-widest uppercase">Industries</p>
           </div>
         </div>
-        <div class="nav-section hidden md:flex items-center gap-8" style="opacity: 1; transform: none;"><button
-            class="text-white/75 hover:text-[#cd6a0c] transition-colors text-sm font-medium tracking-wide">About</button><button
-            class="text-white/75 hover:text-[#cd6a0c] transition-colors text-sm font-medium tracking-wide">Clients</button><button
-            class="text-white/75 hover:text-[#cd6a0c] transition-colors text-sm font-medium tracking-wide">Leadership</button><button
-            class="text-white/75 hover:text-[#cd6a0c] transition-colors text-sm font-medium tracking-wide">Factory</button><button
-            class="text-white/75 hover:text-[#cd6a0c] transition-colors text-sm font-medium tracking-wide">Contact</button>
+        <div class="nav-section hidden md:flex items-center gap-8" style="opacity: 1; transform: none;">
+          <button class="text-white/75 hover:text-[#cd6a0c] transition-colors text-sm font-medium tracking-wide" onclick="scrollToSection('about')">About</button>
+          <button class="text-white/75 hover:text-[#cd6a0c] transition-colors text-sm font-medium tracking-wide" onclick="scrollToSection('clients')">Clients</button>
+          <button class="text-white/75 hover:text-[#cd6a0c] transition-colors text-sm font-medium tracking-wide" onclick="scrollToSection('leadership')">Leadership</button>
+          <button class="text-white/75 hover:text-[#cd6a0c] transition-colors text-sm font-medium tracking-wide" onclick="scrollToSection('factory')">Factory</button>
+          <button class="text-white/75 hover:text-[#cd6a0c] transition-colors text-sm font-medium tracking-wide" onclick="scrollToSection('contact')">Contact</button>
         </div>
       </div>
     </nav>
@@ -50,19 +50,15 @@
             More</button></div>
       </div>
     </div>
-    <div class="absolute bottom-10 left-1/2 -translate-x-1/2" style="opacity: 1;">
-      <div class="cursor-pointer" style="transform: translateY(8.33467px);"><svg xmlns="http://www.w3.org/2000/svg"
-          width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-          stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-8 h-8 text-white/50">
+    <div id="scroll-indicator" class="absolute bottom-10 left-1/2 -translate-x-1/2" style="opacity: 1;">
+      <div id="chevron-bounce" class="cursor-pointer" style="transform: translateY(8.33467px);"><svg
+          xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-chevron-down w-8 h-8 text-white/50">
           <path d="m6 9 6 6 6-6"></path>
         </svg></div>
     </div>
   </section>
-
-  <div class="absolute inset-0 bg-cover bg-center"
-    style="background-image: url(&quot;https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=1920&amp;q=80&quot;);">
-    <div class="absolute inset-0 bg-linear-to-r from-[#1e3a5f]/95 via-[#1e3a5f]/80 to-[#1e3a5f]/60"></div>
-  </div>
 
   <section id="stats" class="py-20 bg-gray-50">
     <div class="max-w-7xl mx-auto px-6 md:px-12">
@@ -213,12 +209,13 @@
           class="client-card group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-[#cd6a0c]/30"
           style="opacity: 1; transform: none;" data-delay-mutliplier="0">
           <div class="flex items-center gap-4">
-            <div
+            <img class="w-10 h-auto" src="./src/assets/logos/ASIANPAINT.NS.png" alt="" srcset="">
+            <!-- <div
               class="w-14 h-14 bg-gradient-to-br from-[#1e3a5f] to-[#2d5a8f] rounded-xl flex items-center justify-center text-white font-bold text-lg group-hover:scale-105 transition-transform">
-              HC</div>
+              HC</div> -->
             <div>
-              <h3 class="font-semibold text-[#1e3a5f] text-sm">Horizon Construction</h3>
-              <p class="text-gray-400 text-xs mt-1">Commercial Construction</p>
+              <h3 class="font-semibold text-[#1e3a5f] text-sm">Asian Paints</h3>
+              <p class="text-gray-400 text-xs mt-1">Commercial Paints</p>
             </div>
           </div>
         </div>
@@ -226,12 +223,10 @@
           class="client-card group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-[#cd6a0c]/30"
           style="opacity: 1; transform: none;" data-delay-mutliplier="1">
           <div class="flex items-center gap-4">
-            <div
-              class="w-14 h-14 bg-gradient-to-br from-[#1e3a5f] to-[#2d5a8f] rounded-xl flex items-center justify-center text-white font-bold text-lg group-hover:scale-105 transition-transform">
-              MD</div>
+            <img class="w-12 h-auto" src="./src/assets/logos/berger-paint-logo.png" alt="" srcset="">
             <div>
-              <h3 class="font-semibold text-[#1e3a5f] text-sm">Metropolitan Developers</h3>
-              <p class="text-gray-400 text-xs mt-1">Real Estate</p>
+              <h3 class="font-semibold text-[#1e3a5f] text-sm">Berger Paints</h3>
+              <p class="text-gray-400 text-xs mt-1">Commercial Paints</p>
             </div>
           </div>
         </div>
@@ -239,12 +234,10 @@
           class="client-card group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-[#cd6a0c]/30"
           style="opacity: 1; transform: none;" data-delay-mutliplier="2">
           <div class="flex items-center gap-4">
-            <div
-              class="w-14 h-14 bg-gradient-to-br from-[#1e3a5f] to-[#2d5a8f] rounded-xl flex items-center justify-center text-white font-bold text-lg group-hover:scale-105 transition-transform">
-              AI</div>
+            <img class="w-14 h-auto" src="./src/assets/logos/daspalla-logo.avif" alt="" srcset=""></img>
             <div>
-              <h3 class="font-semibold text-[#1e3a5f] text-sm">Atlas Interiors</h3>
-              <p class="text-gray-400 text-xs mt-1">Interior Design</p>
+              <h3 class="font-semibold text-[#1e3a5f] text-sm">Daspalla</h3>
+              <p class="text-gray-400 text-xs mt-1">Hotel Group</p>
             </div>
           </div>
         </div>
@@ -252,12 +245,10 @@
           class="client-card group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-[#cd6a0c]/30"
           style="opacity: 1; transform: none;" data-delay-mutliplier="3">
           <div class="flex items-center gap-4">
-            <div
-              class="w-14 h-14 bg-gradient-to-br from-[#1e3a5f] to-[#2d5a8f] rounded-xl flex items-center justify-center text-white font-bold text-lg group-hover:scale-105 transition-transform">
-              SH</div>
+            <img class="w-14 h-auto" style="background-color: #017367;" src="./src/assets/logos/gitam-logo.svg" alt="">
             <div>
-              <h3 class="font-semibold text-[#1e3a5f] text-sm">Sterling Hotels Group</h3>
-              <p class="text-gray-400 text-xs mt-1">Hospitality</p>
+              <h3 class="font-semibold text-[#1e3a5f] text-sm">Gitam University</h3>
+              <p class="text-gray-400 text-xs mt-1">Educational Institutions</p>
             </div>
           </div>
         </div>
@@ -265,12 +256,10 @@
           class="client-card group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-[#cd6a0c]/30"
           style="opacity: 1; transform: none;" data-delay-mutliplier="4">
           <div class="flex items-center gap-4">
-            <div
-              class="w-14 h-14 bg-gradient-to-br from-[#1e3a5f] to-[#2d5a8f] rounded-xl flex items-center justify-center text-white font-bold text-lg group-hover:scale-105 transition-transform">
-              PA</div>
+            <img class="w-10 h-auto" src="./src/assets/logos/hsl-logo-trans.png" alt="">
             <div>
-              <h3 class="font-semibold text-[#1e3a5f] text-sm">Pacific Architects</h3>
-              <p class="text-gray-400 text-xs mt-1">Architecture</p>
+              <h3 class="font-semibold text-[#1e3a5f] text-sm">Hindustan Ship Yard</h3>
+              <p class="text-gray-400 text-xs mt-1">Shipping</p>
             </div>
           </div>
         </div>
@@ -278,12 +267,10 @@
           class="client-card group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-[#cd6a0c]/30"
           style="opacity: 1; transform: none;" data-delay-mutliplier="5">
           <div class="flex items-center gap-4">
-            <div
-              class="w-14 h-14 bg-gradient-to-br from-[#1e3a5f] to-[#2d5a8f] rounded-xl flex items-center justify-center text-white font-bold text-lg group-hover:scale-105 transition-transform">
-              GI</div>
+            <img class="w-12 h-auto" src="./src/assets/logos/nerolac-logo.webp" alt="">
             <div>
-              <h3 class="font-semibold text-[#1e3a5f] text-sm">Greenfield Industries</h3>
-              <p class="text-gray-400 text-xs mt-1">Industrial</p>
+              <h3 class="font-semibold text-[#1e3a5f] text-sm">Nerolac Paints</h3>
+              <p class="text-gray-400 text-xs mt-1">Paints</p>
             </div>
           </div>
         </div>
@@ -291,12 +278,10 @@
           class="client-card group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-[#cd6a0c]/30"
           style="opacity: 1; transform: none;" data-delay-mutliplier="6">
           <div class="flex items-center gap-4">
-            <div
-              class="w-14 h-14 bg-gradient-to-br from-[#1e3a5f] to-[#2d5a8f] rounded-xl flex items-center justify-center text-white font-bold text-lg group-hover:scale-105 transition-transform">
-              CP</div>
+            <img class="w-12 h-auto" src="./src/assets/logos/ppg-logo.svg" alt="">
             <div>
-              <h3 class="font-semibold text-[#1e3a5f] text-sm">Coastal Properties</h3>
-              <p class="text-gray-400 text-xs mt-1">Real Estate</p>
+              <h3 class="font-semibold text-[#1e3a5f] text-sm">PPG Paints</h3>
+              <p class="text-gray-400 text-xs mt-1">Paints</p>
             </div>
           </div>
         </div>
@@ -304,12 +289,10 @@
           class="client-card group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-[#cd6a0c]/30"
           style="opacity: 1; transform: none;" data-delay-mutliplier="7">
           <div class="flex items-center gap-4">
-            <div
-              class="w-14 h-14 bg-gradient-to-br from-[#1e3a5f] to-[#2d5a8f] rounded-xl flex items-center justify-center text-white font-bold text-lg group-hover:scale-105 transition-transform">
-              UL</div>
+            <img class="w-12 h-auto" src="./src/assets/logos/simga-paints-logo.webp" alt="">
             <div>
-              <h3 class="font-semibold text-[#1e3a5f] text-sm">Urban Living Co.</h3>
-              <p class="text-gray-400 text-xs mt-1">Residential</p>
+              <h3 class="font-semibold text-[#1e3a5f] text-sm">Sigma Paints</h3>
+              <p class="text-gray-400 text-xs mt-1">Paints</p>
             </div>
           </div>
         </div>
@@ -498,7 +481,7 @@
           <div data-source-location="components/home/FactoryGallery:81:14" data-dynamic-content="true"
             class="relative h-full min-h-100"><img data-source-location="components/home/FactoryGallery:82:16"
               data-dynamic-content="false"
-              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&amp;q=80"
+              src="https://plus.unsplash.com/premium_photo-1661963449696-89b762c74a32?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Main Production Line"
               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
             <div data-source-location="components/home/FactoryGallery:87:16" data-dynamic-content="false"
@@ -520,7 +503,7 @@
           <div data-source-location="components/home/FactoryGallery:81:14" data-dynamic-content="true"
             class="relative h-64"><img data-source-location="components/home/FactoryGallery:82:16"
               data-dynamic-content="false"
-              src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=1200&amp;q=80"
+              src="https://plus.unsplash.com/premium_photo-1664298450627-0073be5650cc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Quality Control Lab"
               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
             <div data-source-location="components/home/FactoryGallery:87:16" data-dynamic-content="false"
@@ -542,7 +525,7 @@
           <div data-source-location="components/home/FactoryGallery:81:14" data-dynamic-content="true"
             class="relative h-64"><img data-source-location="components/home/FactoryGallery:82:16"
               data-dynamic-content="false"
-              src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&amp;q=80"
+              src="https://plus.unsplash.com/premium_photo-1661963416769-462fec20e084?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Color Mixing Station"
               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
             <div data-source-location="components/home/FactoryGallery:87:16" data-dynamic-content="false"
@@ -586,7 +569,7 @@
           <div data-source-location="components/home/FactoryGallery:81:14" data-dynamic-content="true"
             class="relative h-64"><img data-source-location="components/home/FactoryGallery:82:16"
               data-dynamic-content="false"
-              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&amp;q=80"
+              src="https://images.unsplash.com/photo-1760921678729-9658c8b792bb?q=80&w=2075&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Warehouse &amp; Distribution"
               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
             <div data-source-location="components/home/FactoryGallery:87:16" data-dynamic-content="false"
@@ -608,7 +591,7 @@
           <div data-source-location="components/home/FactoryGallery:81:14" data-dynamic-content="true"
             class="relative h-64"><img data-source-location="components/home/FactoryGallery:82:16"
               data-dynamic-content="false"
-              src="https://images.unsplash.com/photo-1565108046517-cb27e5267470?w=1200&amp;q=80"
+              src="https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Raw Material Storage"
               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
             <div data-source-location="components/home/FactoryGallery:87:16" data-dynamic-content="false"
@@ -664,8 +647,7 @@
                 </svg></div>
               <div>
                 <p class="text-gray-400 text-sm">Email</p><a href="mailto:info@coromandelpaints.com"
-                  class="text-[#1e3a5f] font-medium hover:text-[#cd6a0c] transition-colors">info@Coromandel
-                  Paints.com</a>
+                  class="text-[#1e3a5f] font-medium hover:text-[#cd6a0c] transition-colors">info@coromandelpaints.com</a>
               </div>
             </div>
             <div class="contact-item flex items-start gap-4" style="opacity: 1; transform: none;"
@@ -725,7 +707,7 @@
     </div>
   </section>
 
-  <footer class="bg-[#1e3a5f] py-16">
+  <footer class="bg-[#1e3a5f] pt-16 pb-2">
     <div class="max-w-7xl mx-auto px-6 md:px-12">
       <div class="grid md:grid-cols-4 gap-10 mb-12">
         <div class="md:col-span-2">
@@ -764,7 +746,7 @@
         </div>
       </div>
       <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-        <p class="text-white/40 text-sm">© 2024 Coromandel Paints Industries. All rights reserved.</p>
+        <p class="text-white/40 text-sm">© 2026 Coromandel Paints Industries. All rights reserved.</p>
         <div class="flex gap-6"><a href="#" class="text-white/40 hover:text-white/70 transition-colors text-sm">Privacy
             Policy</a><a href="#" class="text-white/40 hover:text-white/70 transition-colors text-sm">Terms of
             Service</a><a href="#" class="text-white/40 hover:text-white/70 transition-colors text-sm">Cookie Policy</a>
@@ -772,119 +754,16 @@
       </div>
     </div>
   </footer>
-  <!-- <header class="absolute inset-x-0 top-0 z-50">
-    <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
-      <div class="flex lg:flex-1">
-        <a href="#" class="-m-1.5 p-1.5">
-          <span class="sr-only">Coromandel Paints</span>
-          <img src="./src/assets/logos/Coromandel_Paints.png" alt=""
-            class="h-24 w-auto" />
-        </a>
-      </div>
-      <div class="flex lg:hidden">
-        <button type="button" command="show-modal" commandfor="mobile-menu"
-          class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200">
-          <span class="sr-only">Open main menu</span>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
-            aria-hidden="true" class="size-6">
-            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-        </button>
-      </div>
-      <div class="hidden lg:flex lg:gap-x-12">
-        <a href="#" class="text-sm/6 font-semibold text-white">Product</a>
-        <a href="#" class="text-sm/6 font-semibold text-white">Features</a>
-        <a href="#" class="text-sm/6 font-semibold text-white">Marketplace</a>
-        <a href="#" class="text-sm/6 font-semibold text-white">Company</a>
-      </div>
-      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="#" class="text-sm/6 font-semibold text-white">Log in <span aria-hidden="true">&rarr;</span></a>
-      </div>
-    </nav>
-    <el-dialog>
-      <dialog id="mobile-menu" class="m-0 p-0 backdrop:bg-transparent lg:hidden">
-        <div tabindex="0" class="fixed inset-0 focus:outline focus:outline-0">
-          <el-dialog-panel
-            class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
-            <div class="flex items-center justify-between">
-              <a href="#" class="-m-1.5 p-1.5">
-                <span class="sr-only">Your Company</span>
-                <img src="./src/assets/logos/Coromandel_Paints.png" alt=""
-                  class="h-8 w-auto" />
-              </a>
-              <button type="button" command="close" commandfor="mobile-menu"
-                class="-m-2.5 rounded-md p-2.5 text-gray-200">
-                <span class="sr-only">Close menu</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
-                  aria-hidden="true" class="size-6">
-                  <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-              </button>
-            </div>
-            <div class="mt-6 flow-root">
-              <div class="-my-6 divide-y divide-white/10">
-                <div class="space-y-2 py-6">
-                  <a href="#"
-                    class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Product</a>
-                  <a href="#"
-                    class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Features</a>
-                  <a href="#"
-                    class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Marketplace</a>
-                  <a href="#"
-                    class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Company</a>
-                </div>
-                <div class="py-6">
-                  <a href="#"
-                    class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-white/5">Log
-                    in</a>
-                </div>
-              </div>
-            </div>
-          </el-dialog-panel>
-        </div>
-      </dialog>
-    </el-dialog>
-  </header> -->
-
-  <!-- <div class="relative isolate px-6 pt-14 lg:px-8">
-    <div aria-hidden="true" class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
-      <div
-        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
-        class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]">
-      </div>
-    </div>
-    <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-      <div class="hidden sm:mb-8 sm:flex sm:justify-center">
-        <div class="relative rounded-full px-3 py-1 text-sm/6 text-gray-400">
-          <span class="inline-block px-4 py-2 bg-[#cd6a0c]/60 border border-[#cd6a0c]/70 rounded-full text-white  text-sm font-medium tracking-wider uppercase mb-6">Excellence Since 1987</span>
-        </div>
-      </div>
-      <div class="text-center">
-        <h1 class="text-balance text-5xl font-semibold tracking-tight text-white sm:text-7xl">Transforming spaces <span class="block font-semibold text-[#cd6a0c]">With Color &amp; Quality</span></h1>
-        <p class="mt-8 text-pretty text-left text-lg font-medium text-white sm:text-xl/8">Leading manufacturer of premium paints and coatings, serving industries worldwide with innovative solutions and sustainable practices.
-
-Get in Touch
-</p>
-        <div class="mt-10 flex items-center justify-center gap-x-6">
-          <a href="#"
-            class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Get
-            started</a>
-          <a href="#" class="text-sm/6 font-semibold text-white">Learn more <span aria-hidden="true">→</span></a>
-        </div>
-      </div>
-    </div>
-    <div aria-hidden="true"
-      class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
-      <div
-        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
-        class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]">
-      </div>
-    </div>
-  </div> -->
-  </div>
 
   <script type="module">
     import { animate } from "motion";
+
+    window.scrollToSection = (id) => {
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    };
 
     //
     // Helpers
@@ -901,6 +780,27 @@ Get in Touch
       if (!el) return;
       animate(el, to, { easing: "ease-out", ...options });
     };
+
+    const scrollIndicator = document.getElementById("scroll-indicator");
+    const chevronBounce = document.getElementById("chevron-bounce");
+
+    // Replaces: initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1 }}
+    animate(scrollIndicator, { opacity: 1 }, { delay: 1 });
+
+    // Replaces: animate={{ y: [0, 10, 0] }} transition={{ duration: 2, repeat: Infinity }}
+    animate(
+      chevronBounce,
+      { y: [0, 10, 0] },
+      { duration: 2, repeat: Infinity }
+    );
+
+    // Replaces: onClick={() => scrollToSection('stats')}
+    chevronBounce.addEventListener("click", () => {
+      const statsSection = document.getElementById("stats");
+      if (statsSection) {
+        statsSection.scrollIntoView({ behavior: "smooth" });
+      }
+    });
 
     // Gallery state
     let selectedImageIndex = null;
