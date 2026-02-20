@@ -64,14 +64,13 @@
             class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
             <div class="flex items-center justify-between">
               <div class="mobile-logo-section flex items-center gap-3">
-                                <span class="sr-only">Coromandel Paints</span>
-                <img src="./src/assets/logos/edited_logo.png" alt=""
-                  class="w-12 h-auto" />
-                            <div>
-            <h1 class="text-white/75 font-semibold text-lg md:text-2xl tracking-wide">Coromandel Paints</h1>
-            <p class="text-white/60 text-xs tracking-widest uppercase">Industries</p>
+                <span class="sr-only">Coromandel Paints</span>
+                <img src="./src/assets/logos/edited_logo.png" alt="" class="w-12 h-auto" />
+                <div>
+                  <h1 class="text-white/75 font-semibold text-lg md:text-2xl tracking-wide">Coromandel Paints</h1>
+                  <p class="text-white/60 text-xs tracking-widest uppercase">Industries</p>
+                </div>
               </div>
-          </div>
 
               <button type="button" command="close" commandfor="mobile-menu"
                 class="-m-2.5 rounded-md p-2.5 text-gray-200">
@@ -85,11 +84,21 @@
             <div class="mt-6 flow-root">
               <div class="-my-6 divide-y divide-white/10">
                 <div class="space-y-2 py-6">
-                  <button command="close" commandfor="mobile-menu" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5" onclick="scrollToSection('about')">About</button>
-                  <button command="close" commandfor="mobile-menu" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5" onclick="scrollToSection('clients')">Clients</button>
-                  <button command="close" commandfor="mobile-menu" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5" onclick="scrollToSection('leadership')">Leadership</button>
-                  <button command="close" commandfor="mobile-menu" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5" onclick="scrollToSection('factory')">Factory</button>
-                  <button command="close" commandfor="mobile-menu" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5" onclick="scrollToSection('contact')">Contact</button>
+                  <button command="close" commandfor="mobile-menu"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5"
+                    onclick="scrollToSection('about')">About</button>
+                  <button command="close" commandfor="mobile-menu"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5"
+                    onclick="scrollToSection('clients')">Clients</button>
+                  <button command="close" commandfor="mobile-menu"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5"
+                    onclick="scrollToSection('leadership')">Leadership</button>
+                  <button command="close" commandfor="mobile-menu"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5"
+                    onclick="scrollToSection('factory')">Factory</button>
+                  <button command="close" commandfor="mobile-menu"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5"
+                    onclick="scrollToSection('contact')">Contact</button>
                 </div>
               </div>
             </div>
@@ -246,7 +255,8 @@
           <div class="relative"><img
               src="https://images.unsplash.com/photo-1716191300020-b52dec5b70a8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Paint manufacturing" class="rounded-2xl shadow-2xl w-full object-cover h-125">
-            <div class="absolute left-1/2 -translate-x-1/2 -bottom-12 md:-bottom-6 md:-left-6 bg-[#1e3a5f] text-white p-6 rounded-xl shadow-xl">
+            <div
+              class="absolute left-1/2 -translate-x-1/2 -bottom-12 md:-bottom-6 md:-left-6 bg-[#1e3a5f] text-white p-6 rounded-xl shadow-xl">
               <p class="text-4xl font-bold text-[#cd6a0c]">50M+</p>
               <p class="text-sm text-white/70 mt-1">Liters Produced Annually</p>
             </div>
@@ -266,16 +276,16 @@
           names in
           construction, architecture, and design across the globe.</p>
       </div>
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
         <div
           class="client-card group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-[#cd6a0c]/30"
           style="opacity: 1; transform: none;" data-delay-mutliplier="0">
-          <div class="md:flex items-center gap-4">
+          <div class="flex flex-col md:flex-row items-center gap-4">
             <img class="w-10 h-auto" src="./src/assets/logos/ASIANPAINT.NS.png" alt="" srcset="">
             <!-- <div
-              class="w-14 h-14 bg-gradient-to-br from-[#1e3a5f] to-[#2d5a8f] rounded-xl flex items-center justify-center text-white font-bold text-lg group-hover:scale-105 transition-transform">
+              class="w-14 h-14 bg-linear-to-br from-[#1e3a5f] to-[#2d5a8f] rounded-xl flex items-center justify-center text-white font-bold text-lg group-hover:scale-105 transition-transform">
               HC</div> -->
-            <div>
+            <div class="text-center md:text-left">
               <h3 class="font-semibold text-[#1e3a5f] text-sm">Asian Paints</h3>
               <p class="text-gray-400 text-xs mt-1">Commercial Paints</p>
             </div>
@@ -284,9 +294,10 @@
         <div
           class="client-card group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-[#cd6a0c]/30"
           style="opacity: 1; transform: none;" data-delay-mutliplier="1">
-          <div class="flex items-center gap-4">
+          <div class="flex flex-col md:flex-row items-center gap-4">
+
             <img class="w-12 h-auto" src="./src/assets/logos/berger-paint-logo.png" alt="" srcset="">
-            <div>
+            <div class="text-center md:text-left">
               <h3 class="font-semibold text-[#1e3a5f] text-sm">Berger Paints</h3>
               <p class="text-gray-400 text-xs mt-1">Commercial Paints</p>
             </div>
@@ -295,9 +306,10 @@
         <div
           class="client-card group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-[#cd6a0c]/30"
           style="opacity: 1; transform: none;" data-delay-mutliplier="2">
-          <div class="flex items-center gap-4">
+          <div class="flex flex-col md:flex-row items-center gap-4">
+
             <img class="w-14 h-auto" src="./src/assets/logos/daspalla-logo.avif" alt="" srcset=""></img>
-            <div>
+            <div class="text-center md:text-left">
               <h3 class="font-semibold text-[#1e3a5f] text-sm">Daspalla</h3>
               <p class="text-gray-400 text-xs mt-1">Hotel Group</p>
             </div>
@@ -306,9 +318,10 @@
         <div
           class="client-card group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-[#cd6a0c]/30"
           style="opacity: 1; transform: none;" data-delay-mutliplier="3">
-          <div class="flex items-center gap-4">
+          <div class="flex flex-col md:flex-row items-center gap-4">
+
             <img class="w-14 h-auto" style="background-color: #017367;" src="./src/assets/logos/gitam-logo.svg" alt="">
-            <div>
+            <div class="text-center md:text-left">
               <h3 class="font-semibold text-[#1e3a5f] text-sm">Gitam University</h3>
               <p class="text-gray-400 text-xs mt-1">Educational Institutions</p>
             </div>
@@ -317,9 +330,10 @@
         <div
           class="client-card group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-[#cd6a0c]/30"
           style="opacity: 1; transform: none;" data-delay-mutliplier="4">
-          <div class="flex items-center gap-4">
+          <div class="flex flex-col md:flex-row items-center gap-4">
+
             <img class="w-10 h-auto" src="./src/assets/logos/hsl-logo-trans.png" alt="">
-            <div>
+            <div class="text-center md:text-left">
               <h3 class="font-semibold text-[#1e3a5f] text-sm">Hindustan Ship Yard</h3>
               <p class="text-gray-400 text-xs mt-1">Shipping</p>
             </div>
@@ -328,9 +342,10 @@
         <div
           class="client-card group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-[#cd6a0c]/30"
           style="opacity: 1; transform: none;" data-delay-mutliplier="5">
-          <div class="flex items-center gap-4">
+          <div class="flex flex-col md:flex-row items-center gap-4">
+
             <img class="w-12 h-auto" src="./src/assets/logos/nerolac-logo.webp" alt="">
-            <div>
+            <div class="text-center md:text-left">
               <h3 class="font-semibold text-[#1e3a5f] text-sm">Nerolac Paints</h3>
               <p class="text-gray-400 text-xs mt-1">Paints</p>
             </div>
@@ -339,9 +354,10 @@
         <div
           class="client-card group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-[#cd6a0c]/30"
           style="opacity: 1; transform: none;" data-delay-mutliplier="6">
-          <div class="flex items-center gap-4">
+          <div class="flex flex-col md:flex-row items-center gap-4">
+
             <img class="w-12 h-auto" src="./src/assets/logos/ppg-logo.svg" alt="">
-            <div>
+            <div class="text-center md:text-left">
               <h3 class="font-semibold text-[#1e3a5f] text-sm">PPG Paints</h3>
               <p class="text-gray-400 text-xs mt-1">Paints</p>
             </div>
@@ -350,9 +366,10 @@
         <div
           class="client-card group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-[#cd6a0c]/30"
           style="opacity: 1; transform: none;" data-delay-mutliplier="7">
-          <div class="flex items-center gap-4">
+          <div class="flex flex-col md:flex-row items-center gap-4">
+
             <img class="w-12 h-auto" src="./src/assets/logos/simga-paints-logo.webp" alt="">
-            <div>
+            <div class="text-center md:text-left">
               <h3 class="font-semibold text-[#1e3a5f] text-sm">Sigma Paints</h3>
               <p class="text-gray-400 text-xs mt-1">Paints</p>
             </div>
@@ -361,11 +378,12 @@
         <div
           class="client-card group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-[#cd6a0c]/30"
           style="opacity: 1; transform: none;" data-delay-mutliplier="8">
-          <div class="flex items-center gap-4">
+          <div class="flex flex-col md:flex-row items-center gap-4">
+
             <div
-              class="w-14 h-14 bg-gradient-to-br from-[#1e3a5f] to-[#2d5a8f] rounded-xl flex items-center justify-center text-white font-bold text-lg group-hover:scale-105 transition-transform">
+              class="w-14 h-14 bg-linear-to-br from-[#1e3a5f] to-[#2d5a8f] rounded-xl flex items-center justify-center text-white font-bold text-lg group-hover:scale-105 transition-transform">
               SE</div>
-            <div>
+            <div class="text-center md:text-left">
               <h3 class="font-semibold text-[#1e3a5f] text-sm">Summit Engineering</h3>
               <p class="text-gray-400 text-xs mt-1">Engineering</p>
             </div>
@@ -374,11 +392,12 @@
         <div
           class="client-card group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-[#cd6a0c]/30"
           style="opacity: 1; transform: none;" data-delay-mutliplier="9">
-          <div class="flex items-center gap-4">
+          <div class="flex flex-col md:flex-row items-center gap-4">
+
             <div
-              class="w-14 h-14 bg-gradient-to-br from-[#1e3a5f] to-[#2d5a8f] rounded-xl flex items-center justify-center text-white font-bold text-lg group-hover:scale-105 transition-transform">
+              class="w-14 h-14 bg-linear-to-br from-[#1e3a5f] to-[#2d5a8f] rounded-xl flex items-center justify-center text-white font-bold text-lg group-hover:scale-105 transition-transform">
               RF</div>
-            <div>
+            <div class="text-center md:text-left">
               <h3 class="font-semibold text-[#1e3a5f] text-sm">Royal Furnishings</h3>
               <p class="text-gray-400 text-xs mt-1">Furniture</p>
             </div>
@@ -387,11 +406,12 @@
         <div
           class="client-card group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-[#cd6a0c]/30"
           style="opacity: 1; transform: none;" data-delay-mutliplier="10">
-          <div class="flex items-center gap-4">
+          <div class="flex flex-col md:flex-row items-center gap-4">
+
             <div
-              class="w-14 h-14 bg-gradient-to-br from-[#1e3a5f] to-[#2d5a8f] rounded-xl flex items-center justify-center text-white font-bold text-lg group-hover:scale-105 transition-transform">
+              class="w-14 h-14 bg-linear-to-br from-[#1e3a5f] to-[#2d5a8f] rounded-xl flex items-center justify-center text-white font-bold text-lg group-hover:scale-105 transition-transform">
               PH</div>
-            <div>
+            <div class="text-center md:text-left">
               <h3 class="font-semibold text-[#1e3a5f] text-sm">Prestige Homes</h3>
               <p class="text-gray-400 text-xs mt-1">Home Building</p>
             </div>
@@ -400,11 +420,12 @@
         <div
           class="client-card group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-[#cd6a0c]/30"
           style="opacity: 1; transform: none;" data-delay-mutliplier="11">
-          <div class="flex items-center gap-4">
+          <div class="flex flex-col md:flex-row items-center gap-4">
+
             <div
-              class="w-14 h-14 bg-gradient-to-br from-[#1e3a5f] to-[#2d5a8f] rounded-xl flex items-center justify-center text-white font-bold text-lg group-hover:scale-105 transition-transform">
+              class="w-14 h-14 bg-linear-to-br from-[#1e3a5f] to-[#2d5a8f] rounded-xl flex items-center justify-center text-white font-bold text-lg group-hover:scale-105 transition-transform">
               GT</div>
-            <div>
+            <div class="text-center md:text-left">
               <h3 class="font-semibold text-[#1e3a5f] text-sm">Global Trade Center</h3>
               <p class="text-gray-400 text-xs mt-1">Commercial</p>
             </div>
