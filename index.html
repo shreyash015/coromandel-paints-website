@@ -18,8 +18,9 @@
       <div class="absolute inset-0 bg-linear-to-r from-[#1e3a5f]/95 via-[#1e3a5f]/80 to-[#1e3a5f]/60"></div>
     </div> -->
 
-      <div class="absolute inset-0 bg-cover bg-center">
-        <video class="brightness-25 w-full h-full object-cover" src="https://www.pexels.com/download/video/10101925/" autoplay loop muted></video>
+    <div class="absolute inset-0 bg-cover bg-center">
+      <video class="brightness-25 w-full h-full object-cover" src="https://www.pexels.com/download/video/10101925/"
+        autoplay loop muted></video>
       <div class="absolute inset-0 bg-linear-to-r from-[#1e3a5f]/55 via-[#1e3a5f]/40 to-[#1e3a5f]/20"></div>
     </div>
     <nav class="absolute top-0 left-0 right-0 z-20 px-6 md:px-12 py-6">
@@ -31,15 +32,71 @@
             <p class="text-white/60 text-xs tracking-widest uppercase">Industries</p>
           </div>
         </div>
+        <div class="flex lg:hidden">
+          <button type="button" command="show-modal" commandfor="mobile-menu"
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200">
+            <span class="sr-only">Open main menu</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+              aria-hidden="true" class="size-6">
+              <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
         <div class="nav-section hidden md:flex items-center gap-8" style="opacity: 1; transform: none;">
-          <button class="text-white/75 hover:text-[#cd6a0c] transition-colors text-sm font-medium tracking-wide" onclick="scrollToSection('about')">About</button>
-          <button class="text-white/75 hover:text-[#cd6a0c] transition-colors text-sm font-medium tracking-wide" onclick="scrollToSection('clients')">Clients</button>
-          <button class="text-white/75 hover:text-[#cd6a0c] transition-colors text-sm font-medium tracking-wide" onclick="scrollToSection('leadership')">Leadership</button>
-          <button class="text-white/75 hover:text-[#cd6a0c] transition-colors text-sm font-medium tracking-wide" onclick="scrollToSection('factory')">Factory</button>
-          <button class="text-white/75 hover:text-[#cd6a0c] transition-colors text-sm font-medium tracking-wide" onclick="scrollToSection('contact')">Contact</button>
+          <button class="text-white/75 hover:text-[#cd6a0c] transition-colors text-sm font-medium tracking-wide"
+            onclick="scrollToSection('about')">About</button>
+          <button class="text-white/75 hover:text-[#cd6a0c] transition-colors text-sm font-medium tracking-wide"
+            onclick="scrollToSection('clients')">Clients</button>
+          <button class="text-white/75 hover:text-[#cd6a0c] transition-colors text-sm font-medium tracking-wide"
+            onclick="scrollToSection('leadership')">Leadership</button>
+          <button class="text-white/75 hover:text-[#cd6a0c] transition-colors text-sm font-medium tracking-wide"
+            onclick="scrollToSection('factory')">Factory</button>
+          <button class="text-white/75 hover:text-[#cd6a0c] transition-colors text-sm font-medium tracking-wide"
+            onclick="scrollToSection('contact')">Contact</button>
         </div>
       </div>
     </nav>
+    <!-- Mobile menu -->
+    <el-dialog>
+      <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+        <div tabindex="0" class="fixed inset-0 focus:outline-none">
+          <el-dialog-panel
+            class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+            <div class="flex items-center justify-between">
+              <div class="mobile-logo-section flex items-center gap-3">
+                                <span class="sr-only">Coromandel Paints</span>
+                <img src="./src/assets/logos/edited_logo.png" alt=""
+                  class="w-12 h-auto" />
+                            <div>
+            <h1 class="text-white/75 font-semibold text-lg md:text-2xl tracking-wide">Coromandel Paints</h1>
+            <p class="text-white/60 text-xs tracking-widest uppercase">Industries</p>
+              </div>
+          </div>
+
+              <button type="button" command="close" commandfor="mobile-menu"
+                class="-m-2.5 rounded-md p-2.5 text-gray-200">
+                <span class="sr-only">Close menu</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                  aria-hidden="true" class="size-6">
+                  <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6 flow-root">
+              <div class="-my-6 divide-y divide-white/10">
+                <div class="space-y-2 py-6">
+                  <button command="close" commandfor="mobile-menu" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5" onclick="scrollToSection('about')">About</button>
+                  <button command="close" commandfor="mobile-menu" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5" onclick="scrollToSection('clients')">Clients</button>
+                  <button command="close" commandfor="mobile-menu" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5" onclick="scrollToSection('leadership')">Leadership</button>
+                  <button command="close" commandfor="mobile-menu" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5" onclick="scrollToSection('factory')">Factory</button>
+                  <button command="close" commandfor="mobile-menu" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5" onclick="scrollToSection('contact')">Contact</button>
+                </div>
+              </div>
+            </div>
+          </el-dialog-panel>
+        </div>
+      </dialog>
+    </el-dialog>
     <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12 text-center md:text-left">
       <div class="hero-content" style="opacity: 1; transform: none;"><span
           class="mt-6 inline-block px-4 py-2 bg-[#cd6a0c]/20 border border-[#cd6a0c]/30 rounded-full text-white/75 text-xs md:text-sm font-medium tracking-wider uppercase mb-6">Excellence
