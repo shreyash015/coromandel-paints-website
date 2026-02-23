@@ -13,11 +13,6 @@
 
 <body>
   <section class="relative h-screen flex items-center justify-center overflow-hidden">
-    <!-- <div class="absolute inset-0 bg-cover bg-center"
-      style="background-image: url(&quot;https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=1920&amp;q=80&quot;);">
-      <div class="absolute inset-0 bg-linear-to-r from-[#1e3a5f]/95 via-[#1e3a5f]/80 to-[#1e3a5f]/60"></div>
-    </div> -->
-
     <div class="absolute inset-0 bg-cover bg-center">
       <video class="brightness-25 w-full h-full object-cover" src="https://www.pexels.com/download/video/10101925/"
         autoplay loop muted></video>
@@ -308,7 +303,7 @@
           style="opacity: 1; transform: none;" data-delay-mutliplier="2">
           <div class="flex flex-col md:flex-row items-center gap-4">
 
-            <img class="h-8 w-auto md:w-14 md:h-auto" src="./src/assets/logos/daspalla-logo.avif" alt="" srcset=""></img>
+            <img class="h-8 w-auto md:w-14 md:h-auto" src="./src/assets/logos/daspalla-logo.avif" alt="" srcset="">
             <div class="text-center md:text-left">
               <h3 class="font-semibold text-[#1e3a5f] text-sm">Daspalla</h3>
               <p class="text-gray-400 text-xs mt-1">Hotel Group</p>
@@ -320,7 +315,8 @@
           style="opacity: 1; transform: none;" data-delay-mutliplier="3">
           <div class="flex flex-col md:flex-row items-center gap-4">
 
-            <img class="h-8 w-auto md:w-14 md:h-auto" style="background-color: #017367;" src="./src/assets/logos/gitam-logo.svg" alt="">
+            <img class="h-8 w-auto md:w-14 md:h-auto" style="background-color: #017367;"
+              src="./src/assets/logos/gitam-logo.svg" alt="">
             <div class="text-center md:text-left">
               <h3 class="font-semibold text-[#1e3a5f] text-sm">Gitam University</h3>
               <p class="text-gray-400 text-xs mt-1">Educational Institutions</p>
@@ -765,26 +761,112 @@
             </div>
           </div>
         </div>
-        <div class="contact-form bg-white rounded-2xl shadow-xl p-8 md:p-10" style="opacity: 1; transform: none;">
+        <div class="contact-form-section bg-white rounded-2xl shadow-xl p-8 md:p-10"
+          style="opacity: 1; transform: none;">
           <h3 class="text-xl font-semibold text-[#1e3a5f] mb-6">Send us a Message</h3>
-          <form class="space-y-5">
+          <form id="contact-form" class="space-y-5" action="https://formspree.io/f/xkovvddk" method="POST">
             <div class="grid md:grid-cols-2 gap-5">
-              <div><label class="text-sm text-gray-500 mb-2 block">Full Name</label><input
+              <div>
+                <label class="text-sm text-gray-500 mb-2 block">Full Name</label>
+                <input type="text" name="name"
                   class="flex h-9 w-full rounded-md border bg-transparent px-3 py-1 text-base shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm border-gray-200 focus:border-[#cd6a0c] focus:ring-[#cd6a0c]/20"
-                  placeholder="John Doe"></div>
-              <div><label class="text-sm text-gray-500 mb-2 block">Email</label><input type="email"
+                  required minlength="2" placeholder="John Doe">
+              </div>
+              <div>
+                <label class="text-sm text-gray-500 mb-2 block">Email</label>
+                <input type="email" name="email"
                   class="flex h-9 w-full rounded-md border bg-transparent px-3 py-1 text-base shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm border-gray-200 focus:border-[#cd6a0c] focus:ring-[#cd6a0c]/20"
-                  placeholder="john@company.com"></div>
+                  required placeholder="john@company.com">
+              </div>
             </div>
-            <div><label class="text-sm text-gray-500 mb-2 block">Company</label><input
+            <div>
+              <label class="text-sm text-gray-500 mb-2 block">Company</label>
+              <input type="text" name="company"
                 class="flex h-9 w-full rounded-md border bg-transparent px-3 py-1 text-base shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm border-gray-200 focus:border-[#cd6a0c] focus:ring-[#cd6a0c]/20"
-                placeholder="Your company name"></div>
-            <div><label class="text-sm text-gray-500 mb-2 block">Message</label><textarea
-                class="flex min-h-[60px] w-full rounded-md border bg-transparent px-3 py-2 text-base shadow-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm border-gray-200 focus:border-[#cd6a0c] focus:ring-[#cd6a0c]/20 resize-none"
-                placeholder="Tell us about your project..." rows="4"></textarea></div><button
+                required placeholder="Your company name">
+            </div>
+            <div>
+              <label class="text-sm text-gray-500 mb-2 block">Message</label>
+              <textarea name="message"
+                class="flex min-h-15 w-full rounded-md border bg-transparent px-3 py-2 text-base shadow-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm border-gray-200 focus:border-[#cd6a0c] focus:ring-[#cd6a0c]/20 resize-none"
+                required minlength="10" placeholder="Tell us about your needs.." rows="4"></textarea>
+            </div>
+            <button
               class="inline-flex items-center justify-center gap-2 whitespace-nowrap focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow h-9 px-4 w-full bg-[#1e3a5f] hover:bg-[#2d5a8f] text-white py-6 text-base font-medium rounded-lg transition-all"
-              type="submit">Send Message</button>
+              type="submit">Send Message
+            </button>
           </form>
+          <!-- Global notification live region, render this permanently at the end of the document -->
+          <div id="success-modal" aria-live="assertive"
+            class="hidden pointer-events-none fixed inset-0 items-end px-4 py-6 sm:items-start sm:p-6 z-40">
+            <div class="flex w-full flex-col items-center space-y-4 sm:items-end">
+              <!-- Notification panel, dynamically insert this into the live region when it needs to be displayed -->
+              <div
+                class="pointer-events-auto w-full max-w-sm translate-y-0 transform rounded-lg bg-gray-800 opacity-100 shadow-lg outline-1 -outline-offset-1 outline-white/10 transition duration-300 ease-out sm:translate-x-0 starting:translate-y-2 starting:opacity-0 starting:sm:translate-x-2 starting:sm:translate-y-0">
+                <div class="p-4">
+                  <div class="flex items-start">
+                    <div class="shrink-0">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                        aria-hidden="true" class="size-6 text-green-400">
+                        <path d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                    <div class="ml-3 w-0 flex-1 pt-0.5">
+                      <p class="text-sm font-medium text-white">Message Sent!</p>
+                      <p class="mt-1 text-sm text-gray-400">Thank you for reaching out. Our team will contact you
+                        shortly</p>
+                    </div>
+                    <div class="ml-4 flex shrink-0">
+                      <button id="close-success-modal" type="button"
+                        class="inline-flex rounded-md text-gray-400 hover:text-white focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
+                        <span class="sr-only">Close</span>
+                        <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5">
+                          <path
+                            d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="error-modal" aria-live="assertive"
+            class="hidden pointer-events-none fixed inset-0 items-end px-4 py-6 sm:items-start sm:p-6 z-40">
+            <div class="flex w-full flex-col items-center space-y-4 sm:items-end">
+              <!-- Notification panel, dynamically insert this into the live region when it needs to be displayed -->
+              <div
+                class="pointer-events-auto w-full max-w-sm translate-y-0 transform rounded-lg bg-gray-800 opacity-100 shadow-lg outline outline-red-500/25 transition duration-300 ease-out sm:translate-x-0 starting:translate-y-2 starting:opacity-0 starting:sm:translate-x-2 starting:sm:translate-y-0">
+                <div class="p-4">
+                  <div class="flex items-start">
+                    <div class="shrink-0">
+                      <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true"
+                        class="size-5 text-red-400">
+                        <path
+                          d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16ZM8.28 7.22a.75.75 0 0 0-1.06 1.06L8.94 10l-1.72 1.72a.75.75 0 1 0 1.06 1.06L10 11.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L11.06 10l1.72-1.72a.75.75 0 0 0-1.06-1.06L10 8.94 8.28 7.22Z"
+                          clip-rule="evenodd" fill-rule="evenodd" />
+                      </svg>
+                    </div>
+                    <div class="ml-3 w-0 flex-1 pt-0.5">
+                      <p id="error-message" class="text-sm font-medium text-white">Unable to submit form, please try
+                        again later.</p>
+                    </div>
+                    <div class="ml-4 flex shrink-0">
+                      <button id="close-error-modal" type="button"
+                        class="inline-flex rounded-md text-gray-400 hover:text-white focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
+                        <span class="sr-only">Close</span>
+                        <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5">
+                          <path
+                            d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -796,11 +878,6 @@
         <div class="md:col-span-2">
           <div class="flex items-center gap-3 mb-4">
             <img class="w-24 h-auto" src="./src/assets/logos/edited_logo.png" alt="">
-
-            <!-- <div class="w-10 h-10 bg-[#cd6a0c] rounded-lg flex items-center justify-center">
-                        <img class="w-24 h-auto" src="./src/assets/logos/edited_logo.png" alt="">
-
-            </div> -->
             <div>
               <h3 class="text-white font-semibold">Coromandel Paints</h3>
               <p class="text-white/40 text-xs tracking-widest uppercase">Industries</p>
@@ -1123,7 +1200,7 @@
     // whileInView: { opacity: 1, x: 0 }
     // viewport: { once: true }
     //
-    const contactForm = document.querySelector(".contact-form");
+    const contactForm = document.querySelector(".contact-form-section");
     setInitial(contactForm, { x: 30, opacity: 0 });
     const contactFormObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -1133,6 +1210,76 @@
       });
     }, { threshold: 0.2 });
     contactFormObserver.observe(contactForm);
+
+    const form = document.getElementById('contact-form');
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault(); // ✅ Stop the redirect
+
+      if (!form.reportValidity()) {
+        return;
+      }
+
+      const data = new FormData(form);
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        form.reset();
+
+        const successModal = document.getElementById('success-modal');
+        if (successModal) {
+          successModal.classList.remove('hidden');
+          successModal.classList.add('flex');
+
+          // optional auto-hide after 5s; remove this block if you want manual close only
+          setTimeout(() => {
+            successModal.classList.add('hidden');
+            successModal.classList.remove('flex');
+          }, 5000);
+        }
+      } else {
+        try {
+          const data = await response.json();
+          if (data.errors && data.errors.length) {
+            const msg = data.errors.map(err => err.message).join(', ');
+            document.getElementById('error-message').textContent = msg;
+          } else {
+            alert('Oops! There was a problem submitting your form.');
+          }
+          const errorModal = document.getElementById('error-modal');
+          errorModal.classList.remove('hidden');
+          errorModal.classList.add('flex');
+          // optional auto-hide after 5s; remove this block if you want manual close only
+          setTimeout(() => {
+            errorModal.classList.add('hidden');
+            errorModal.classList.remove('flex');
+          }, 5000);
+        }
+        catch {
+
+        }
+      }
+
+    });
+
+    const closeModal = (modalId) => {
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+    };
+
+    document.getElementById('close-success-modal')
+      .addEventListener('click', () => closeModal('success-modal'));
+
+    document.getElementById('close-error-modal')a
+      .addEventListener('click', () => closeModal('error-modal'));
+
   </script>
 
 
