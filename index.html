@@ -13,11 +13,6 @@
 
 <body>
   <section class="relative h-screen flex items-center justify-center overflow-hidden">
-    <!-- <div class="absolute inset-0 bg-cover bg-center"
-      style="background-image: url(&quot;https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=1920&amp;q=80&quot;);">
-      <div class="absolute inset-0 bg-linear-to-r from-[#1e3a5f]/95 via-[#1e3a5f]/80 to-[#1e3a5f]/60"></div>
-    </div> -->
-
     <div class="absolute inset-0 bg-cover bg-center">
       <video class="brightness-25 w-full h-full object-cover" src="https://www.pexels.com/download/video/10101925/"
         autoplay loop muted></video>
@@ -109,16 +104,19 @@
     <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12 text-center md:text-left">
       <div class="hero-content" style="opacity: 1; transform: none;"><span
           class="mt-6 inline-block px-4 py-2 bg-[#cd6a0c]/20 border border-[#cd6a0c]/30 rounded-full text-white/75 text-xs md:text-sm font-medium tracking-wider uppercase mb-6">Excellence
-          Since 1987</span>
+          Since 1975</span>
         <h1 class="text-4xl md:text-6xl lg:text-7xl font-light text-white leading-tight mb-6">Transforming Spaces<span
             class="block font-semibold text-[#cd6a0c]">With Color &amp; Quality</span></h1>
         <p class="text-white/75 text-lg md:text-xl max-w-2xl mb-10 leading-relaxed">Leading manufacturer of premium
           paints and coatings, serving industries worldwide with innovative solutions and sustainable practices.</p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"><button
+        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+          <button onclick="scrollToSection('contact')"
             class="inline-flex items-center justify-center gap-2 whitespace-nowrap focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow h-9 bg-[#cd6a0c] hover:bg-[#cdb40b] text-white px-8 py-6 text-base font-medium rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-[#cd6a0c]/20">Get
-            in Touch</button><button
+            in Touch</button>
+          <button id="learn-more"
             class="inline-flex items-center justify-center gap-2 whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background shadow-sm hover:text-accent-foreground h-9 border-white/30 text-white hover:bg-white/10 px-8 py-6 text-base font-medium rounded-lg">Learn
-            More</button></div>
+            More</button>
+        </div>
       </div>
     </div>
     <div id="scroll-indicator" class="absolute bottom-10 left-1/2 -translate-x-1/2" style="opacity: 1;">
@@ -144,7 +142,7 @@
               <path d="M12 18h1"></path>
               <path d="M7 18h1"></path>
             </svg></div>
-          <h3 class="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-2">37+</h3>
+          <h3 class="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-2">50+</h3>
           <p class="text-gray-500 text-sm font-medium">Years of Excellence</p>
         </div>
         <div class="text-center stat" style="opacity: 1; transform: none;" data-delay-multiplier="1">
@@ -172,7 +170,7 @@
               <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
             </svg>
           </div>
-          <h3 class="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-2">2,500+</h3>
+          <h3 class="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-2">1,000+</h3>
           <p class="text-gray-500 text-sm font-medium">Employees Worldwide</p>
         </div>
         <div class="text-center stat" style="opacity: 1; transform: none;" data-delay-multiplier="3">
@@ -200,13 +198,13 @@
             class="text-[#cd6a0c] text-sm font-semibold tracking-widest uppercase">About Us</span>
           <h2 class="text-3xl md:text-4xl font-light text-[#1e3a5f] mt-3 mb-6 leading-tight">Pioneering Innovation
             in<span class="block font-semibold">Paint Manufacturing</span></h2>
-          <p class="text-gray-600 leading-relaxed mb-6">Founded in 1987, Coromandel Paints Industries has grown from a
+          <p class="text-gray-600 leading-relaxed mb-6">Founded in 1975, Coromandel Paints Industries has grown from a
             small
             family business into one of the region's most respected paint manufacturers. Our commitment to quality,
             innovation, and sustainability has made us the preferred choice for architects, builders, and homeowners
             alike.</p>
           <p class="text-gray-600 leading-relaxed mb-8">With three state-of-the-art manufacturing facilities and a
-            dedicated team of chemists and engineers, we produce over 50 million liters of premium paints annually,
+            dedicated team of chemists and engineers, we produce over 200 million liters of premium paints annually,
             serving markets across 45 countries.</p>
           <div class="space-y-4">
             <div class="flex items-center gap-3 feature-item" style="opacity: 1; transform: none;"
@@ -256,8 +254,8 @@
               src="https://images.unsplash.com/photo-1716191300020-b52dec5b70a8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Paint manufacturing" class="rounded-2xl shadow-2xl w-full object-cover h-125">
             <div
-              class="absolute left-1/2 -translate-x-1/2 -bottom-12 md:-bottom-6 md:-left-6 bg-[#1e3a5f] text-white p-6 rounded-xl shadow-xl">
-              <p class="text-4xl font-bold text-[#cd6a0c]">50M+</p>
+              class="absolute left-1/2 -translate-x-1/2 md:translate-none -bottom-12 md:-bottom-6 md:-left-6 bg-[#1e3a5f] text-white p-6 rounded-xl shadow-xl">
+              <p class="text-4xl font-bold text-[#cd6a0c]">200M+</p>
               <p class="text-sm text-white/70 mt-1">Liters Produced Annually</p>
             </div>
           </div>
@@ -308,7 +306,8 @@
           style="opacity: 1; transform: none;" data-delay-mutliplier="2">
           <div class="flex flex-col md:flex-row items-center gap-4">
 
-            <img class="h-8 w-auto md:w-14 md:h-auto" src="./src/assets/logos/daspalla-logo.avif" alt="" srcset=""></img>
+            <img class="h-8 w-auto md:w-14 md:h-auto" src="./src/assets/logos/daspalla-logo.avif" alt=""
+              srcset=""></img>
             <div class="text-center md:text-left">
               <h3 class="font-semibold text-[#1e3a5f] text-sm">Daspalla</h3>
               <p class="text-gray-400 text-xs mt-1">Hotel Group</p>
@@ -320,7 +319,8 @@
           style="opacity: 1; transform: none;" data-delay-mutliplier="3">
           <div class="flex flex-col md:flex-row items-center gap-4">
 
-            <img class="h-8 w-auto md:w-14 md:h-auto" style="background-color: #017367;" src="./src/assets/logos/gitam-logo.svg" alt="">
+            <img class="h-8 w-auto md:w-14 md:h-auto" style="background-color: #017367;"
+              src="./src/assets/logos/gitam-logo.svg" alt="">
             <div class="text-center md:text-left">
               <h3 class="font-semibold text-[#1e3a5f] text-sm">Gitam University</h3>
               <p class="text-gray-400 text-xs mt-1">Educational Institutions</p>
@@ -379,13 +379,10 @@
           class="client-card group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-[#cd6a0c]/30"
           style="opacity: 1; transform: none;" data-delay-mutliplier="8">
           <div class="flex flex-col md:flex-row items-center gap-4">
-
-            <div
-              class="w-14 h-14 bg-linear-to-br from-[#1e3a5f] to-[#2d5a8f] rounded-xl flex items-center justify-center text-white font-bold text-lg group-hover:scale-105 transition-transform">
-              SE</div>
+            <img class="h-8 w-auto md:w-12 md:h-auto" src="./src/assets/logos/akzo-nobel-logo.webp" alt="">
             <div class="text-center md:text-left">
-              <h3 class="font-semibold text-[#1e3a5f] text-sm">Summit Engineering</h3>
-              <p class="text-gray-400 text-xs mt-1">Engineering</p>
+              <h3 class="font-semibold text-[#1e3a5f] text-sm">AkzoNobel</h3>
+              <p class="text-gray-400 text-xs mt-1">Paints</p>
             </div>
           </div>
         </div>
@@ -448,68 +445,60 @@
         <p class="text-gray-500 mt-4 max-w-2xl mx-auto">Our leadership team combines decades of industry experience with
           a vision for sustainable innovation.</p>
       </div>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-12">
         <div class="board-members group" style="opacity: 1; transform: none;" data-delay-multiplier="0">
           <div class="relative overflow-hidden rounded-2xl mb-5"><img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&amp;q=80" alt="Richard Thompson"
-              class="w-full h-80 object-cover object-top group-hover:scale-105 transition-transform duration-500">
+              src="./src/assets/Portraits/Gemini_Generated_Image_t86e5nt86e5nt86e.png" alt="Satyanarayana Arumilli"
+              class="w-full h-80 object-cover object-[50%_30%] group-hover:scale-105 transition-transform duration-500">
             <div
               class="absolute inset-0 bg-linear-to-t from-[#1e3a5f]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <div class="absolute bottom-4 left-4 right-4 flex gap-3"><button
-                  class="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-[#cd6a0c] transition-colors"><svg
-                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="lucide lucide-linkedin w-4 h-4">
-                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                    <rect width="4" height="12" x="2" y="9"></rect>
-                    <circle cx="4" cy="4" r="2"></circle>
-                  </svg></button><button
-                  class="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-[#cd6a0c] transition-colors"><svg
-                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              <div class="absolute bottom-4 left-4 right-4 flex gap-3">
+                <a href="mailto:md@coromandelpaints.in"
+                  class="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-[#cd6a0c] transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="lucide lucide-mail w-4 h-4">
                     <rect width="20" height="16" x="2" y="4" rx="2"></rect>
                     <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-                  </svg></button></div>
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
-          <h3 class="font-semibold text-xl text-[#1e3a5f]">Richard Thompson</h3>
-          <p class="text-[#cd6a0c] text-sm font-medium mt-1">Chairman &amp; CEO</p>
-          <p class="text-gray-500 text-sm mt-3 leading-relaxed">With over 30 years in the coatings industry, Richard has
-            led Coromandel Paints through its most significant growth periods.</p>
+          <h3 class="font-semibold text-xl text-[#1e3a5f]">Satyanarayana Arumilli</h3>
+          <p class="text-[#cd6a0c] text-sm font-medium mt-1">Chairman &amp; Managing Director</p>
+          <p class="text-gray-500 text-sm mt-3 leading-relaxed">A visionary leader with extensive industry experience,
+            steering the company’s strategic growth and operational excellence.
+          </p>
         </div>
         <div class="board-members group" style="opacity: 1; transform: none;" data-delay-multiplier="1">
-          <div class="relative overflow-hidden rounded-2xl mb-5"><img
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&amp;q=80" alt="Sarah Chen"
-              class="w-full h-80 object-cover object-top group-hover:scale-105 transition-transform duration-500">
+          <div class="relative overflow-hidden rounded-2xl mb-5">
+            <img src="./src/assets/Portraits/Gemini_Generated_Image_n3nsgwn3nsgwn3ns.png" alt="Pramod Arumilli"
+              class="w-full h-80 object-cover object-[50%_10%] group-hover:scale-105 transition-transform duration-500">
             <div
               class="absolute inset-0 bg-linear-to-t from-[#1e3a5f]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <div class="absolute bottom-4 left-4 right-4 flex gap-3"><button
-                  class="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-[#cd6a0c] transition-colors"><svg
-                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="lucide lucide-linkedin w-4 h-4">
-                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                    <rect width="4" height="12" x="2" y="9"></rect>
-                    <circle cx="4" cy="4" r="2"></circle>
-                  </svg></button><button
+              <div class="absolute bottom-4 left-4 right-4 flex gap-3">
+                <a href="mailto:pramod@coromandelpaints.in"
                   class="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-[#cd6a0c] transition-colors"><svg
                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="lucide lucide-mail w-4 h-4">
                     <rect width="20" height="16" x="2" y="4" rx="2"></rect>
                     <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-                  </svg></button></div>
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
-          <h3 class="font-semibold text-xl text-[#1e3a5f]">Sarah Chen</h3>
-          <p class="text-[#cd6a0c] text-sm font-medium mt-1">Chief Operating Officer</p>
-          <p class="text-gray-500 text-sm mt-3 leading-relaxed">Sarah oversees all manufacturing operations across our
-            three facilities, ensuring quality and efficiency.</p>
+          <h3 class="font-semibold text-xl text-[#1e3a5f]">Pramod Arumilli</h3>
+          <p class="text-[#cd6a0c] text-sm font-medium mt-1">Executive Director</p>
+          <p class="text-gray-500 text-sm mt-3 leading-relaxed">Focused on operational efficiency and business expansion
+            initiatives, strengthening innovation and customer engagement.
+          </p>
         </div>
-        <div class="board-members group" style="opacity: 1; transform: none;" data-delay-multiplier="2">
+        <!-- <div class="board-members group" style="opacity: 1; transform: none;" data-delay-multiplier="2">
           <div class="relative overflow-hidden rounded-2xl mb-5"><img
-              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&amp;q=80" alt="Michael Roberts"
+              src="./src/assets/Portraits/Gemini_Generated_Image_suna2isuna2isuna.png" alt="Michael Roberts"
               class="w-full h-80 object-cover object-top group-hover:scale-105 transition-transform duration-500">
             <div
               class="absolute inset-0 bg-linear-to-t from-[#1e3a5f]/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -535,7 +524,7 @@
           <p class="text-[#cd6a0c] text-sm font-medium mt-1">Chief Financial Officer</p>
           <p class="text-gray-500 text-sm mt-3 leading-relaxed">Michael brings two decades of financial expertise,
             guiding our strategic investments and growth.</p>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -807,7 +796,7 @@
             </div>
           </div>
           <p class="text-white/60 text-sm leading-relaxed max-w-sm">Leading the paint industry with innovative
-            solutions, sustainable practices, and unwavering commitment to quality since 1987.</p>
+            solutions, sustainable practices, and unwavering commitment to quality since 1975.</p>
         </div>
         <div>
           <h4 class="text-white font-semibold mb-4">Quick Links</h4>
@@ -866,6 +855,7 @@
 
     const scrollIndicator = document.getElementById("scroll-indicator");
     const chevronBounce = document.getElementById("chevron-bounce");
+    const learnMore = document.getElementById("learn-more");
 
     // Replaces: initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1 }}
     animate(scrollIndicator, { opacity: 1 }, { delay: 1 });
@@ -877,13 +867,20 @@
       { duration: 2, repeat: Infinity }
     );
 
-    // Replaces: onClick={() => scrollToSection('stats')}
     chevronBounce.addEventListener("click", () => {
       const statsSection = document.getElementById("stats");
       if (statsSection) {
         statsSection.scrollIntoView({ behavior: "smooth" });
       }
     });
+    learnMore.addEventListener("click", () => {
+      const statsSection = document.getElementById("stats");
+      if (statsSection) {
+        statsSection.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+
+
 
     // Gallery state
     let selectedImageIndex = null;
